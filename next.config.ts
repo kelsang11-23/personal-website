@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-import type { NextConfig } from 'next';
-
 const nextConfig: NextConfig = {
   output: 'export', // 启用静态导出（关键配置）
   images: {
