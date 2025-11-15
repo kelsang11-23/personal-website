@@ -1,16 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  distDir: 'docs',               // 静态文件输出到 docs
+  basePath: '/personal-website', // 你的仓库名
+  trailingSlash: true,
+}
 
-export default nextConfig;
-const nextConfig: NextConfig = {
-  output: 'export', // 启用静态导出（关键配置）
-  images: {
-    unoptimized: true, // 禁用Next.js图片优化（GitHub Pages不支持）
-  },
-  basePath: '/personal-website', // 替换为你的GitHub仓库名（必须一致）
-};
-
-export default nextConfig;
+export default nextConfig
